@@ -17,13 +17,13 @@
                 </div>
 
                 <div class="links">
-                    <a href="/">Home</a>
-                    <a href="/sobre-nos">Sobre Nós</a>
-                    <a href="/contato">Contato</a>
-                    <a href="/app/produtos">Produtos</a>
-                    <a href="/app/clientes">Clientes</a>
-                    <a href="/app/fornecedores">Fornecedores</a>
-                    <a href="/login">Login</a>
+                    <a href="{{ route('site.home') }}">Home</a>
+                    <a href="{{ route('site.sobre') }}">Sobre Nós</a>
+                    <a href="{{ route('site.contato') }}">Contato</a>
+                    <a href="{{ route('site.login') }}">Login</a>
+                    <a href="{{ route('app.produtos') }}">Produtos</a>
+                    <a href="{{ route('app.clientes') }}">Clientes</a>
+                    <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
                 </div>
             </div>
         </div>
