@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SobreController extends Controller
 {
     public function index() {
-        echo "Sobre nós";
+        return view('site/sobre.index');
     }
 }
