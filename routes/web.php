@@ -14,4 +14,4 @@ Route::get('/clientes', 'ClientesController@index');
 
 Route::get('/fornecedores', 'FornecedoresController@index');
 
-Route::get('/produtos', 'ProdutoController@index');
+Route::get('/produtos', 'ProdutosController@index');

@@ -18,7 +18,12 @@
 
                 <div class="links">
                     <a href="/">Home</a>
+                    <a href="/sobre-nos">Sobre Nós</a>
                     <a href="/contato">Contato</a>
+                    <a href="/produtos">Produtos</a>
+                    <a href="/clientes">Clientes</a>
+                    <a href="/fornecedores">Fornecedores</a>
+                    <a href="/login">Login</a>
                 </div>
             </div>
         </div>
