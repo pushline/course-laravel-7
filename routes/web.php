@@ -10,8 +10,8 @@ Route::get('/contato', 'ContatoController@index');
 
 Route::get('/login', 'LoginController@index');
 
-Route::get('/clientes', 'ClientesController@index');
-
-Route::get('/fornecedores', 'FornecedoresController@index');
-
-Route::get('/produtos', 'ProdutosController@index');
+Route::prefix('/app')->group(function() {
+    Route::get('/clientes', 'ClientesController@index');
+    Route::get('/fornecedores', 'FornecedoresController@index');
+    Route::get('/produtos', 'ProdutosController@index');
+});
