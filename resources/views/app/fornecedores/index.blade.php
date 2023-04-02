@@ -32,7 +32,7 @@
                     <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
                 </div>
 
-                @dd($fornecedores); {{-- pr() do cake no laravel pra     array --}}
+                @dd($fornecedores) {{-- pr() do cake no laravel pra     array --}}
 
             </div>
         </div>
