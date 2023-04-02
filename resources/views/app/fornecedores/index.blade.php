@@ -19,7 +19,6 @@
                 {{-- isso é um // ou /**/ no php --}}
 
                 @php
-                    echo 'samp';
                     // literalmente uma tag php diferente
                 @endphp
 
@@ -32,6 +31,9 @@
                     <a href="{{ route('app.clientes') }}">Clientes</a>
                     <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
                 </div>
+
+                @dd($fornecedores); {{-- pr() do cake no laravel pra     array --}}
+
             </div>
         </div>
     </body>
