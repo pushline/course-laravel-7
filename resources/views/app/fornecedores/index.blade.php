@@ -32,7 +32,13 @@
                     <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
                 </div>
 
-                @dd($fornecedores) {{-- pr() do cake no laravel pra     array --}}
+               {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
+
+                @if(count($fornecedores) > 0)
+                    <h3>fornecedores existem</h3>
+                @else
+                    <h3>nao tem fornecedores</h3>
+                @endif
 
             </div>
         </div>
