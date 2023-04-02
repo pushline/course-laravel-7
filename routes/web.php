@@ -17,6 +17,8 @@ Route::prefix('/app')->group(function() {
     Route::get('/produtos', 'ProdutosController@index')->name('app.produtos');
 });
 
+Route::get('/teste/{p1}/{p2}', 'TesteController@index')->name('teste');
+
 Route::fallback(function() {
     echo 'A rota acessada não existe. <a href="' . route('site.home') . '">clique aqui</a> para ir para página inicial';
 });
