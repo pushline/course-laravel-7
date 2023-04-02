@@ -18,6 +18,11 @@
 
                 {{-- isso é um // ou /**/ no php --}}
 
+                @php
+                    echo 'samp';
+                    // literalmente uma tag php diferente
+                @endphp
+
                 <div class="links">
                     <a href="{{ route('site.home') }}">Home</a>
                     <a href="{{ route('site.sobre') }}">Sobre Nós</a>
