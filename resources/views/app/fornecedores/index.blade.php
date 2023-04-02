@@ -16,6 +16,8 @@
                     Fornecedores
                 </div>
 
+                {{-- isso é um // ou /**/ no php --}}
+
                 <div class="links">
                     <a href="{{ route('site.home') }}">Home</a>
                     <a href="{{ route('site.sobre') }}">Sobre Nós</a>
