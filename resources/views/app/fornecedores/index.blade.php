@@ -17,6 +17,7 @@
                 </div>
 
                 {{-- isso é um // ou /**/ no php --}}
+                {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
 
                 @php
                     // literalmente uma tag php diferente
@@ -30,15 +31,7 @@
                     <a href="{{ route('app.produtos') }}">Produtos</a>
                     <a href="{{ route('app.clientes') }}">Clientes</a>
                     <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
-                </div>
-
-               {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
-
-                @if(count($fornecedores) > 0)
-                    <h3>fornecedores existem</h3>
-                @else
-                    <h3>nao tem fornecedores</h3>
-                @endif
+                </div>               
 
             </div>
         </div>
