@@ -31,7 +31,16 @@
                     <a href="{{ route('app.produtos') }}">Produtos</a>
                     <a href="{{ route('app.clientes') }}">Clientes</a>
                     <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
-                </div>               
+                </div>       
+                     
+                {{-- @unless executa se o retorno for false --}}
+                Fornecedor: {{ $fornecedores[0]['nome'] }}<br>
+                Status: {{ $fornecedores[0]['status'] }}
+                
+                {{-- o contrario do if(!condicao) --}}
+                @unless($fornecedores[2]['status'] == 'Y') 
+                    Fornecedor inativo
+                @endunless
 
             </div>
         </div>
