@@ -8,6 +8,8 @@ Fornecedores
     {{-- isso é um // ou /**/ no php --}}
     {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
 
+    {{-- se colocar um @ antes dos {{}} ele vira texto normal --}}
+
     @php
     // literalmente uma tag php diferente
     @endphp
