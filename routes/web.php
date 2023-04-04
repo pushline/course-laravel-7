@@ -9,9 +9,9 @@ Route::get('/sobre-nos', 'SobreController@index')->name('site.sobre');
 
 Route::get('/contato', 'ContatoController@index')->name('site.contato');
 
-Route::get('/login', 'LoginController@index')->name('site.login');
 
 Route::prefix('/app')->group(function() {
+    Route::get('/login', 'LoginController@index')->name('app.login');
     Route::get('/clientes', 'ClientesController@index')->name('app.clientes');
     Route::get('/fornecedores', 'FornecedoresController@index')->name('app.fornecedores');
     Route::get('/produtos', 'ProdutosController@index')->name('app.produtos');

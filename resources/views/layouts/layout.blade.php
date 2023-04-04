@@ -10,23 +10,43 @@
         <link href="{{ asset('css/default.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="topo">
+
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ route('site.home') }}">Principal</a></li>
+                    <li><a href="{{ route('site.sobre') }}">Sobre Nós</a></li>
+                    <li><a href="{{ route('site.contato') }}">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="conteudo-pagina">
             <div class="content">
-                <div class="title m-b-md">
-                    @yield('title')
-                </div>
-
-                <div class="links">
-                    <a href="{{ route('site.home') }}">Home</a>
-                    <a href="{{ route('site.sobre') }}">Sobre Nós</a>
-                    <a href="{{ route('site.contato') }}">Contato</a>
-                    <a href="{{ route('site.login') }}">Login</a>
-                    <a href="{{ route('app.produtos') }}">Produtos</a>
-                    <a href="{{ route('app.clientes') }}">Clientes</a>
-                    <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
-                </div>
-
                 @yield('content')
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div class="redes-sociais">
+                <h2>Redes sociais</h2>
+                <img src="img/facebook.png">
+                <img src="img/linkedin.png">
+                <img src="img/youtube.png">
+            </div>
+            <div class="area-contato">
+                <h2>Contato</h2>
+                <span>(11) 3333-4444</span>
+                <br>
+                <span>supergestao@dominio.com.br</span>
+            </div>
+            <div class="localizacao">
+                <h2>Localização</h2>
+                <img src="img/mapa.png">
             </div>
         </div>
     </body>
