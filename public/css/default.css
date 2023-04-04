@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    
 }
 
 p, span {
@@ -67,25 +75,20 @@ button:hover {
 
 .topo {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f8f8f8;
-    position: absolute;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 15px;
 }
 
 .logo {
     width: 50px;
-    float: left;
-    margin-left: 40px;
 }
 
-.menu {
-    float: right;
-    margin-right: 40px;
-}
 
 .menu li {
-    display: inline;
-    float: left;
+    display: inline-block;
 }
 
 .menu ul {
@@ -95,9 +98,17 @@ button:hover {
     overflow: hidden;
 }
 
+.menu ul li:first-child a{
+    padding-left: 0;
+}
+
+.menu ul li:last-child a{
+    padding-right: 0;
+}
+
 .menu a {
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 14px 10px;
     color: #333;
 }
 
@@ -108,38 +119,47 @@ button:hover {
 .conteudo-destaque {
     width: 100%;
     height: 100%;
-    min-height: 800px; 
+    display: flex;
+    align-items: stretch;
 }
 
 .esquerda {
-    float:left;
     background-color: #268fd0;
-    width: 60%;
-    height: 100%;
+    width: 50%;
 }
 
 .direita {
-    float:right;
     background-color: #2a9ee2;
-    width: 40%;
-    height: 100%;
+    width: 50%;
 }
 
 .informacoes, .contato {
-    margin: 100px 40px 40px 40px;
+    padding: 2rem;
 }
 
 .contato-principal {
     margin: 0px 60px 60px 40px;
 }
 
+.positive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .chamada {
-    margin-top: 30px;
-    margin-left: 20px;
+    padding-top: 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.chamada img {
+    margin-right: 10px;
 }
 
 .video {
-    margin: 40px;
+    padding: 2.5rem;
 }
 
 .video img {
@@ -155,7 +175,7 @@ button:hover {
 }
 
 .titulo-pagina {
-    padding: 100px 0px 60px 0px;
+    padding: 100px;
     background-color: #2a9ee2;
     text-align: center;
 }
@@ -170,13 +190,13 @@ button:hover {
 }
 
 .rodape {
+    display: inline-flex;
     width: 100%;
 }
 
 .redes-sociais, .area-contato, .localizacao {
     width: 33.333%;
     border-top:solid 1px #ccc;
-    float: left;
     text-align: center;
     background-color: #f8f8f8;
     height: 250px;
