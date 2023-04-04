@@ -5,7 +5,7 @@ Fornecedores
           
 @section('content')
 
-    
+    <hr>
     @forelse ($fornecedores as $key => $item)
         Iter: {{ $loop->iteration }}
         <br>
