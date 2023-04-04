@@ -25,6 +25,9 @@ Fornecedores
             first iter
         @endif --}}
 
+    {{-- $loop->count == count($array) --}}
+
+
     {{-- isso é um // ou /**/ no php --}}
     {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
 
