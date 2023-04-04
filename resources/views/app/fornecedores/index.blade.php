@@ -48,15 +48,16 @@
                         @php $i++; @endphp - tem q aumentar ao decorrer do while 
                     @endwhile
                 --}}
-                @foreach ($fornecedores as $key => $item)
+                @forelse ($fornecedores as $key => $item)
                     <br>
                     Fornecedor: {{ $item['nome'] }}<br/>
                     Status: {{ $item['status'] }}<br/>
                     
                     ID: {{ $item['id'] ?? 'DEFAULT' }} 
                     {{-- ?? seria o valor default --}}
-                    
-                @endforeach
+                @empty
+                    Não há fornecedores
+                @endforelse
                 
 
                 {{--  
