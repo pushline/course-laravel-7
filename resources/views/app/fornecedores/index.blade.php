@@ -51,6 +51,8 @@
                         @case('fodase')
                             tal coisa
                             @break
+                        @default
+                            fodase
                     @endswitch
 
                 --}}
