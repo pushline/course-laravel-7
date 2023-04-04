@@ -5,6 +5,20 @@ Fornecedores
           
 @section('content')
 
+    
+    @forelse ($fornecedores as $key => $item)
+        Iter: {{ $loop->iteration }}
+        <br>
+        Fornecedor: {{ $item['nome'] }}<br/>
+        Status: {{ $item['status'] }}<br/>
+        
+        ID: {{ $item['id'] ?? 'DEFAULT' }} 
+        {{-- ?? seria o valor default --}}
+        <hr>
+    @empty
+        Não há fornecedores
+    @endforelse
+
     {{-- isso é um // ou /**/ no php --}}
     {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
 
@@ -28,19 +42,8 @@ Fornecedores
             @php $i++; @endphp - tem q aumentar ao decorrer do while 
         @endwhile
     --}}
-    @forelse ($fornecedores as $key => $item)
-        <br>
-        Fornecedor: {{ $item['nome'] }}<br/>
-        Status: {{ $item['status'] }}<br/>
-        
-        ID: {{ $item['id'] ?? 'DEFAULT' }} 
-        {{-- ?? seria o valor default --}}
-    @empty
-        Não há fornecedores
-    @endforelse
-
-
-    {{--  
+    
+        {{--  
         @for($i = 0; $i < 10; $i++)
             {{ $i }} <br/>
         @endfor    
