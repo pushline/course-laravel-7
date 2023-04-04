@@ -40,6 +40,14 @@
                         {{ $fornecedores[$i][var] }}
                     @endfor
                 --}}
+
+                {{-- 
+                    @php $i = 0; @endphp
+                    @while(isset($fornecedores[$i]))
+                        {{  }}
+                        @php $i++; @endphp - tem q aumentar ao decorrer do while 
+                    @endwhile
+                --}}
                 @foreach ($fornecedores as $item)
                     <br>
                     Fornecedor: {{ $item['nome'] }}<br/>
