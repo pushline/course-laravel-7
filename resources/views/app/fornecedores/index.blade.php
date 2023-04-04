@@ -48,7 +48,7 @@
                         @php $i++; @endphp - tem q aumentar ao decorrer do while 
                     @endwhile
                 --}}
-                @foreach ($fornecedores as $item)
+                @foreach ($fornecedores as $key => $item)
                     <br>
                     Fornecedor: {{ $item['nome'] }}<br/>
                     Status: {{ $item['status'] }}<br/>
