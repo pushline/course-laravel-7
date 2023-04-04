@@ -45,6 +45,15 @@
                     
                 @endforeach
                 
+
+                {{-- 
+                    @switch($var)
+                        @case('fodase')
+                            tal coisa
+                            @break
+                    @endswitch
+
+                --}}
                 
                 {{-- @unless executa se o retorno for false --}}
                 {{-- o contrario do if(!condicao) --}}
