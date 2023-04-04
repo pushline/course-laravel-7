@@ -35,6 +35,11 @@
                      
                 
                 
+                {{-- 
+                    @for($i = 0; $isset($fornecedores[$i]); $i++)
+                        {{ $fornecedores[$i][var] }}
+                    @endfor
+                --}}
                 @foreach ($fornecedores as $item)
                     <br>
                     Fornecedor: {{ $item['nome'] }}<br/>
