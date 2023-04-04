@@ -33,14 +33,27 @@
                     <a href="{{ route('app.fornecedores') }}">Fornecedores</a>
                 </div>       
                      
-                {{-- @unless executa se o retorno for false --}}
-                Fornecedor: {{ $fornecedores[0]['nome'] }}<br>
-                Status: {{ $fornecedores[0]['status'] }}
                 
+                
+                @foreach ($fornecedores as $item)
+                    <br>
+                    Fornecedor: {{ $item['nome'] }}<br/>
+                    Status: {{ $item['status'] }}<br/>
+                    @isset($item['id'])
+                    ID: {{ $item['id'] }}
+                    @endisset
+                @endforeach
+                
+                
+                {{-- @unless executa se o retorno for false --}}
                 {{-- o contrario do if(!condicao) --}}
-                @unless($fornecedores[2]['status'] == 'Y') 
+                {{-- @unless($fornecedores[2]['status'] == 'Y') 
                     Fornecedor inativo
-                @endunless
+                @endunless --}}
+
+               
+                {{-- if isset $var = retorna true se existe/definida --}}
+                
 
             </div>
         </div>
