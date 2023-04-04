@@ -14,10 +14,16 @@ Fornecedores
         
         ID: {{ $item['id'] ?? 'DEFAULT' }} 
         {{-- ?? seria o valor default --}}
+        <br>
+        
         <hr>
     @empty
         Não há fornecedores
     @endforelse
+
+    {{-- @if($loop->first) ou last
+            first iter
+        @endif --}}
 
     {{-- isso é um // ou /**/ no php --}}
     {{-- @dd($fornecedores)  pr() do cake no laravel pra array --}}
