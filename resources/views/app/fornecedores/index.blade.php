@@ -39,9 +39,10 @@
                     <br>
                     Fornecedor: {{ $item['nome'] }}<br/>
                     Status: {{ $item['status'] }}<br/>
-                    @isset($item['id'])
-                    ID: {{ $item['id'] }}
-                    @endisset
+                    
+                    ID: {{ $item['id'] ?? 'DEFAULT' }} 
+                    {{-- ?? seria o valor default --}}
+                    
                 @endforeach
                 
                 
