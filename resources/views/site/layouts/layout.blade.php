@@ -10,7 +10,7 @@
         <link href="{{ asset('css/default.css') }}" rel="stylesheet">
     </head>
     <body>
-        @include('layouts._partials.header')
+        @include('site.layouts._partials.header')
 
         <div class="conteudo-pagina">
             <div class="content">
@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        @include('layouts._partials.footer')
+        @include('site.layouts._partials.footer')
         
     </body>
 </html>
