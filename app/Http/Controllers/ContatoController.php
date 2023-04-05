@@ -8,10 +8,7 @@ class ContatoController extends Controller
 {
     public function index() {
 
-        if(!empty($_GET)){
-            $template = PHP_SAPI !== 'cli' ? '<pre>%s</pre>' : "\n%s\n";
-			printf($template, print_r($_GET, true));;
-        }
+        dd($_GET);
 
         return view('site.contato.index');
     }
