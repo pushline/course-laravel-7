@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('site.layouts.layout')
 @section('title', 'Home')
 @section('content')
     <div class="conteudo-destaque">

@@ -1,4 +1,4 @@
-@extends('layouts.layout')            
+@extends('app.layouts.layout')          
 @section('title')
 Fornecedores
 @stop

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('site.layouts.layout')
 @section('title', 'Contato')
 @section('content')
     <div class="conteudo-pagina">
