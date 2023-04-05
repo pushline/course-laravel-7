@@ -1,5 +1,6 @@
 {{ $slot }}
 {{-- slot é todo conteudo dentro do component --}}
+{{-- {{ $x }} funciona se enviar pos import '..', '['fds' => ...]' --}}
 <form action={{ route('site.contato') }} method="post">
     @csrf
     <input name="nome" type="text" placeholder="Nome" class="borda-preta">
