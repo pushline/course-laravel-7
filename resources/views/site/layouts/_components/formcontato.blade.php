@@ -1,3 +1,5 @@
+{{ $slot }}
+{{-- slot é todo conteudo dentro do component --}}
 <form action={{ route('site.contato') }} method="post">
     @csrf
     <input name="nome" type="text" placeholder="Nome" class="borda-preta">
