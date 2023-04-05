@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Super Gestão - @yield('title')</title>
 
         <?php // asset serve como public na url ?>
         <link href="{{ asset('css/default.css') }}" rel="stylesheet">

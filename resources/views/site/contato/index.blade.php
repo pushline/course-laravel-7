@@ -1,4 +1,5 @@
 @extends('layouts.layout')
+@section('title', 'Contato')
 @section('content')
     <div class="conteudo-pagina">
         <div class="titulo-pagina">
