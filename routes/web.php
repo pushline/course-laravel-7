@@ -8,7 +8,7 @@ Route::get('/', 'HomeController@index')->name('site.home');
 Route::get('/sobre-nos', 'SobreController@index')->name('site.sobre');
 
 Route::get('/contato', 'ContatoController@index')->name('site.contato');
-
+Route::post('/contato', 'ContatoController@index')->name('site.contato');
 
 Route::prefix('/app')->group(function() {
     Route::get('/login', 'LoginController@index')->name('app.login');
